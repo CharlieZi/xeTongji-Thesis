@@ -1,0 +1,78 @@
+% xetex/xelatex 字体设定宏包
+
+\ProvidesPackage{tongji}
+
+
+
+\usepackage[top=3.8cm, bottom=3.8cm, left=3.2cm, right=3.2cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+%xelatex ralated
+\usepackage{fontspec,xunicode,xltxtra} 
+\usepackage[slantfont, boldfont]{xeCJK}
+\defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。
+
+
+
+\input{style/Font}
+\input{style/Header}
+\input{style/Paragraph}
+\input{style/Headings}
+
+
+
+
+
+
+
+
+
+
+
+
+\usepackage[colorlinks,linkcolor=black,citecolor=black]{hyperref}
+
+
+% 处理数学公式中的黑斜体的宏包
+%\RequirePackage{bm}
+
+
+% 不同于~|\mathcal| or |\mathfrak| 之类的英文花体字体
+%\RequirePackage{mathrsfs}
+
+% 表格中支持跨行
+\RequirePackage{multirow}
+
+% 跨页表格
+%\RequirePackage{longtable}
+
+% 固定宽度的表格
+\RequirePackage{tabularx}
+
+
+
+% 确定浮动对象的位置，可以使用~H，强制将浮动对象放到这里（可能效果很差）
+%\RequirePackage{float}
+
+
+% 浮动图形控制宏包。
+% 允许上一个~section 的浮动图形出现在下一个~section 的开始部分
+% 该宏包提供处理浮动对象的~|\FloatBarrier| 命令，使所有未处
+% 理的浮动图形立即被处理。这三个宏包仅供参考，未必使用：
+% \RequirePackage[below]{placeins}
+% \RequirePackage{floatflt} % 图文混排用宏包
+% \RequirePackage{rotating} % 图形和表格的控制旋转
+
+% 给自定义的宏后面自动加空白
+% \RequirePackage{xspace}
+
+
+% 定义自己常用的东西
+\newcommand{\china}{中华人民共和国}
+
+\endinput

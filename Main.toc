@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}引\nobreakspace {}言}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}}{5}{section.1.1}
+\contentsline {chapter}{\numberline {2}软管拉伸试验}{7}{chapter.2}
+\contentsline {chapter}{\numberline {3}修正刚度}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}强度理论}{11}{chapter.4}
